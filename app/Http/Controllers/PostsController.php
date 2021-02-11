@@ -92,7 +92,7 @@ class PostsController extends Controller
 
         $request->session()->flash('status', 'Blog post was updated!');
 
-        return redirect()->route('posts.show', ['post' => $post->id]);  
+        return redirect()->route('posts.show', ['post' => $post->id]);
     }
 
     /**
